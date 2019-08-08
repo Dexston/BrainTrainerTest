@@ -18,7 +18,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private TextView textViewTimer, textViewRiddle, textViewCounter;
-    private ArrayList<TextView> buttons = new ArrayList<>();
+    private ArrayList<TextView> buttons = new ArrayList<>();    //Список для кнопок
     private int answersCounter, correctAnswersCounter, numberOfRightAnswer, rightAnswer, symbol;
     private int min = 5;	//Диапазон чисел от min
     private int max = 30;	//до max
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean gameOver = false;   //Триггер, запрещающий нажатие на кнопки, если время игры вышло
 
     private SharedPreferences mainRecord;
-    private Random rand = new Random();
+    private Random rand = new Random(); //хмм
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
