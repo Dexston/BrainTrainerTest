@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewTimer, textViewRiddle, textViewCounter;
     private ArrayList<TextView> buttons = new ArrayList<>();
     private int answersCounter, correctAnswersCounter, numberOfRightAnswer, rightAnswer, symbol;
-    private int min = 5;
-    private int max = 30;
-    private int time = 15; //Время игры
+    private int min = 5;	//Диапазон чисел от min
+    private int max = 30;	//до max
+    private int time = 15;	//Время игры
     private boolean gameOver = false;
 
     private SharedPreferences mainRecord;
