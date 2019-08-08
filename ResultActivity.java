@@ -32,7 +32,7 @@ public class ResultActivity extends AppCompatActivity {
         int correctAnswersCounter = fromMainActivity.getIntExtra("correctAnswersCounter", 0);
         int record = mainRecord.getInt("record", 0);
 
-        String example;
+        String example; //Строка для варианта слова "пример"
 
         if ((answersCounter % 10 == 1) && (answersCounter % 100 != 11)) {
             example = getString(R.string.example1);
