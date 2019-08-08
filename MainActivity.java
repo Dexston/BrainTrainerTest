@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private int answersCounter, correctAnswersCounter, numberOfRightAnswer, rightAnswer, symbol;
     private int min = 5;
     private int max = 30;
-    private int time = 15;
+    private int time = 15; //Время игры
     private boolean gameOver = false;
 
     private SharedPreferences mainRecord;
