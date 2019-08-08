@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean gameOver = false;   //Триггер, запрещающий нажатие на кнопки, если время игры вышло
 
     private SharedPreferences mainRecord;
-    private Random rand = new Random();
+    private Random rand = new Random(); //хмм
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
