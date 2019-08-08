@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <TextView
+        android:id="@+id/textView1Answer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="monospace"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="@string/answer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClickAnswer"
+        android:tag="0"
+        app:layout_constraintBottom_toTopOf="@+id/textView3Answer"
+        app:layout_constraintEnd_toStartOf="@+id/textView2Answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
+
+    <TextView
+        android:id="@+id/textView2Answer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="monospace"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="@string/answer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClickAnswer"
+        android:tag="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView4Answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView1Answer"
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
+
+    <TextView
+        android:id="@+id/textView3Answer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="monospace"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:text="@string/answer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClickAnswer"
+        android:tag="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4Answer"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Answer" />
+
+    <TextView
+        android:id="@+id/textView4Answer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="monospace"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:text="@string/answer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onClickAnswer"
+        android:tag="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3Answer"
+        app:layout_constraintTop_toBottomOf="@+id/textView2Answer" />
+
+    <TextView
+        android:id="@+id/textViewRiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/riddle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="monospace"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="16dp"
+        android:text="@string/timer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCounter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCounter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="monospace"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/counter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTop"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
