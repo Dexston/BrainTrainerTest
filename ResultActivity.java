@@ -26,7 +26,7 @@ public class ResultActivity extends AppCompatActivity {
 
         TextView textViewResult = findViewById(R.id.textViewResult);
 
-        Intent fromMainActivity = getIntent();
+        Intent fromMainActivity = getIntent();                                                  //Принимаем интент из MainActivity
 
         int answersCounter = fromMainActivity.getIntExtra("answersCounter",0);
         int correctAnswersCounter = fromMainActivity.getIntExtra("correctAnswersCounter", 0);

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private int min = 5;	//Диапазон чисел от min
     private int max = 30;	//до max
     private int time = 15;	//Время игры
-    private boolean gameOver = false;
+    private boolean gameOver = false;   //Триггер, запрещающий нажатие на кнопки, если время игры вышло
 
     private SharedPreferences mainRecord;
     private Random rand = new Random();
